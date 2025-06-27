@@ -19,7 +19,7 @@
     margin: 0 auto;
     padding: 16px;
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
 }
 
 .header_info-nav-link{
@@ -37,10 +37,19 @@
     margin: 0 auto;
     max-width: 1100px;
     padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.header_beauty_info{
+    width: 100%;
+    max-width: 337px;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.header_beauty-phone{
+.header_beauty_info-phone{
     width: 100%;
     font-family: Roboto;
     font-weight: 400;
@@ -52,7 +61,7 @@
 }
 
 
-.header_beauty-button{
+.header_beauty_info-button{
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
@@ -60,8 +69,8 @@
     letter-spacing: 0%;
     text-align: center;
     width: 100%;
-    width: 170px;
-    height: 40px;
+    max-width: 170px;
+    padding: 12px;
     border-radius: 40px;
     border-color: #F13C6E;
     border-width: 2px;
@@ -73,7 +82,6 @@
 
 .header_services{
     width: 100%;
-    margin: 0 auto;
     padding: 30px 0px;
     border-top: 1px solid #EFEFEF;
 
@@ -83,11 +91,11 @@
     width: 100%;
     max-width: 584px;
     margin: 0 auto;
-            display: flex;
-    gap: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header_services-link-nav{
+.header_services-nav-link{
     font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
@@ -99,7 +107,6 @@
 
 main{
     background-color: #EFEFEF;
-    padding-bottom: 10px;
 }
 
 .superchair{
@@ -161,7 +168,7 @@ main{
     max-width: 1110px;
     margin: 0 auto;
     margin-top: 80px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     
 }
 
@@ -177,7 +184,7 @@ main{
 
 .chaircard_div{
     display: flex;
-    gap: 30px;
+    justify-content: space-between;
 }
 
 .chaircard_div-box{
@@ -243,24 +250,27 @@ main{
     margin: 0 auto;
     max-width: 1110px;
     display: flex;
+    justify-content: space-between;
 }
 
-.card_gifts{
+.card_container{
     background-color: #F13C6E;
     width: 100%;
     max-width: 540px;
-    margin: 0 auto;
     display: flex;
-}
-
-.card_gifts-buttontext{
+    justify-content: space-between;
     padding-left: 40px;
     padding-top: 35px;
     padding-bottom: 35px;
-    padding-right: 90px;
+    padding-right: 45px;
+    align-items: center;
 }
 
-.card_gifts-buttontext-title{
+.card_container-buttontext{
+
+}
+
+.card_container-buttontext-title{
     font-family: Roboto;
     font-weight: 700;
     font-size: 18px;
@@ -269,7 +279,7 @@ main{
     color: #ffffff;
 }
 
-.card_gifts-buttontext-text{
+.card_container-buttontext-text{
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
@@ -280,7 +290,7 @@ main{
     width: 129px;
 }
 
-.card_gifts-buttontext-button{
+.card_container-buttontext-button-first{
     width: 225px;
     height: 35px;
     border: none;
@@ -294,48 +304,8 @@ main{
     color: #C4C4C4;
 }
 
-
-.card_gifts-img{
-    margin: 36px 0;
-}
-
-.card_visit{
-    background-color: #F13C6E;
-    width: 100%;
-    max-width: 540px;
-    margin: 0 auto;
-    display: flex;
-}
-
-.card_visit-buttontext{
-    padding-left: 40px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    padding-right: 96px;
-}
-
-.card_visit-buttontext-title{
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #ffffff;
-}
-
-.card_visit-buttontext-text{
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 141%;
-    letter-spacing: 0%;
-    color: #ffffff;
-    margin: 25px 0;
-    width: 129px;
-}
-
-.card_visit-buttontext-button{
-    width: 170px;
+.card_container-buttontext-button-second{
+        width: 170px;
     height: 35px;
     border: 1px solid #FFFFFF;
     border-radius: 30px;
@@ -348,10 +318,12 @@ main{
     background-color: #F13C6E;
 }
 
-.card_visit-img{
-    margin: 56px 0;
-    margin-right: 45px;
+
+.card_container-img{
+    
 }
+
+
 
 
 .impuls{
@@ -372,21 +344,25 @@ main{
 
 .popular{
     background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.popular_container{
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 60px;
-}
-
-.popular_container{
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .popular_container_box{
-    
+    width: 100%;
+    max-width: 255px;
 }
-
 
 .popular_container_box-top{
     width: 100%;
@@ -432,10 +408,13 @@ main{
     width: 100%;
     max-width: 1110px;
     margin: 0 auto;
-    padding: 38px;
+    padding: 38px 0;
 }
 
-
+.social_box_container{
+    display: flex;
+    justify-content: space-between;
+}
 
 .social_box_container-img{
     width: 100%;
@@ -446,6 +425,9 @@ main{
 .social_box_container-info{
     width: 100%;
     max-width: 337px;
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -459,16 +441,16 @@ color: #000000;
 }
 
 .social_box_container-info-button{
-    width: 170px;
-    height: 35px;
-    border: 1px solid #F13C6E;
+    max-width: 170px;
+    padding: 12px 58px;
+    border: 2px solid #F13C6E;
     border-radius: 30px;
     font-family: Roboto;
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: #F13C6E;
+    color: #000000;
     background-color: #ffffff;
 }
 
@@ -483,6 +465,8 @@ color: #000000;
     max-width: 1110px;
     margin: 0 auto;
     padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .rights-container-text{
